@@ -57,7 +57,7 @@ export function HuemapView() {
   return (
     <div>
       <div className="mb-6">
-        <h1 className="text-xl font-semibold tracking-tight text-slate-900">Generador de paletas accesibles</h1>
+        <h1 className="brand-gradient-text text-xl font-bold tracking-tight">Generador de paletas accesibles</h1>
         <p className="text-sm text-slate-500">
           Genera una paleta categórica o valida la tuya — contraste, y separación bajo daltonismo, calculados
           en tiempo real con el mismo método que usan las gráficas de este portafolio.
@@ -77,7 +77,7 @@ export function HuemapView() {
                 key={opt.id}
                 onClick={() => setInputMode(opt.id)}
                 className={`rounded px-3 py-1.5 text-sm font-medium transition-colors ${
-                  inputMode === opt.id ? "bg-slate-900 text-white" : "text-slate-600 hover:bg-slate-100"
+                  inputMode === opt.id ? "brand-gradient text-white shadow-sm" : "text-slate-600 hover:bg-slate-100"
                 }`}
               >
                 {opt.label}
@@ -96,7 +96,7 @@ export function HuemapView() {
                 key={opt.id}
                 onClick={() => setMode(opt.id)}
                 className={`rounded px-3 py-1.5 text-sm font-medium transition-colors ${
-                  mode === opt.id ? "bg-slate-900 text-white" : "text-slate-600 hover:bg-slate-100"
+                  mode === opt.id ? "brand-gradient text-white shadow-sm" : "text-slate-600 hover:bg-slate-100"
                 }`}
               >
                 {opt.label}

@@ -47,7 +47,7 @@ export function ExportPanel({ palette }: ExportPanelProps) {
               key={f.id}
               onClick={() => setFormat(f.id)}
               className={`rounded px-2.5 py-1 text-xs font-medium transition-colors ${
-                format === f.id ? "bg-slate-900 text-white" : "text-slate-600 hover:bg-slate-100"
+                format === f.id ? "brand-gradient text-white shadow-sm" : "text-slate-600 hover:bg-slate-100"
               }`}
             >
               {f.label}
